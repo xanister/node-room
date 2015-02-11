@@ -1,9 +1,10 @@
-node-room
-@author Nicholas Frees nfrees@outlook.com
+# node-room
+
+@author Nicholas Frees <nfrees@outlook.com>
 
 socket.io wrapper to handle live input within a browser
 
-Example usage
+## Example usage
 
 1) Install required modules
 
@@ -14,6 +15,7 @@ npm install
 cp node_modules/socket.io/node_modules/socket.io-client/socket.io.js .
 
 3) Start the server
+
 node server-example.js
 
 4) Visit client-example.html in a browser
