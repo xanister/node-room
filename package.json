@@ -1,0 +1,11 @@
+{
+    "name": "node-room",
+    "description": "Node room server/client connector",
+    "author": "Nicholas Frees",
+    "dependencies": {
+        "socket.io": ">= 1.2.1"
+    },
+    "devDependencies": {
+    },
+    "engine": "node >= 0.10.25"
+}

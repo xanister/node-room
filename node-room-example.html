@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NodeRoomClient example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="messages"></div>
+
+        <script type="text/javascript" src="socket.io.js "></script>
+        <script type="text/javascript" src="NodeRoomClient.js"></script>
+        <script type="text/javascript">
+            // Create the client. Server address+port
+            var client = new NodeRoomClient("http://node-room.anslemgalaxy.com:42501");
+
+            // Do something on connect
+            client.onconnect = function () {
+                // Listen for event from server
+                client.on("customevent", function (response) {
+                    document.getElementById("messages").innerHTML += ("<p>" + response.message + "</p>");
+                });
+            };
+
+            // Start it up
+            client.start();
+        </script>
+    </body>
+</html>
