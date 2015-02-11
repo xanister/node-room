@@ -7,7 +7,7 @@ var server = new NodeRoomServer(42501);
 server.onclientconnect = function (client) {
     console.log("Client connected");
 
-    // Do something with client input events
+    // Do something with client input events as an example
     client.oninput = function (inputs) {
         // Trigger a custom event to all clients
         server.trigger("customevent", {message: "Someone hit G"});
