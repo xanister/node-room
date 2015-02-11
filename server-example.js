@@ -10,7 +10,8 @@ server.onclientconnect = function (client) {
     // Do something with client input events as an example
     client.oninput = function (inputs) {
         // Trigger a custom event to all clients
-        server.trigger("customevent", {message: "Someone hit G"});
+        if (inputs.events.keydown.G)
+            server.trigger("customevent", {message: "Someone hit G"});
     };
 };
 
