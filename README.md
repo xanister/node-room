@@ -3,8 +3,10 @@ node-room
 
 socket.io wrapper to handle live input within a browser
 
-Install
+Example usage
 
 npm install
 
 node server-example.js
+
+then visit client-example.html in a browser

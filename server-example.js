@@ -1,6 +1,6 @@
 var NodeRoomServer = require('./NodeRoomServer');
 
-// Create the sever
+// Create the sever, make sure port used is open and available
 var server = new NodeRoomServer(42501);
 
 // Listen for connections
